@@ -26,7 +26,7 @@ public class MySQLConnUtils {
         // Структура URL Connection для MySQL:
         // Например:
         // jdbc:mysql://localhost:3306/my_webapp
-        String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName + "?serverTimezone=Europe/Moscow&useSSL=false";
+        String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName + "?serverTimezone=Europe/Moscow&useSSL=false&allowPublicKeyRetrieval=true";
 
         Connection conn = DriverManager.getConnection(connectionURL, userName, password);
         return conn;
